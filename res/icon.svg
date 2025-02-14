@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128mm"
+   height="48mm"
+   viewBox="0 0 128 48"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="wiitube.jpg"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="wiitube.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:export-bgcolor="#ffffffff"
+     inkscape:zoom="1.5"
+     inkscape:cx="235"
+     inkscape:cy="126.33333"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="font-variation-settings:'wght' 500;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;paint-order:stroke fill markers"
+       id="rect1"
+       width="59"
+       height="29.520002"
+       x="55.903881"
+       y="9.2399979"
+       rx="2.5"
+       ry="2.5" />
+    <text
+       xml:space="preserve"
+       style="font-size:28.9369px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, @wght=500';font-variation-settings:'wght' 500;stroke-width:0.264583"
+       x="13.880853"
+       y="30.783237"
+       id="text1"
+       transform="scale(0.85882991,1.1643749)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.9369px;font-family:Nunito;-inkscape-font-specification:'Nunito, @wght=500';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 500;stroke-width:0.264583"
+         x="13.880853"
+         y="30.783237">Wii Tube</tspan></text>
+  </g>
+</svg>

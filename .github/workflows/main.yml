@@ -1,0 +1,41 @@
+name: Build binaries
+
+on:
+  push:
+    branches:
+      - "**"
+    paths:
+      - "source/**"
+      - "Makefile"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install DevKitPro
+        run: |
+           wget https://apt.devkitpro.org/install-devkitpro-pacman
+           chmod +x ./install-devkitpro-pacman
+           sudo ./install-devkitpro-pacman
+           sudo pacman -Sy wii-dev
+      - name: Build
+        run: make
+      - name: Package
+        run: |
+          sed -i "s/\$date/$(date +%Y%m%d%H%M%S)/" res/meta.xml
+          mkdir -p output/apps/wiitube
+          cp wiitube.dol output/apps/wiitube
+          cp res/icon.png output/apps/wiitube
+          cp res/meta.xml output/apps/wiitube
+          echo "sha=$(git rev-parse --short=7 HEAD)" >> $GITHUB_ENV
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: wiitube_${{ env.sha }}
+          path: output
+      - name: Upload debug binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: wiitube.elf
+          path: wiitube.elf

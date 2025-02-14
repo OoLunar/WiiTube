@@ -1,0 +1,14 @@
+{
+    "C_Cpp.default.systemIncludePath": [
+        "${workspaceFolder}/**",
+        "/opt/devkitpro/devkitPPC/include/**",
+        "/opt/devkitpro/devkitPPC/powerpc-eabi/include/**",
+        "/opt/devkitpro/portlibs/wii/include/**",
+        "/opt/devkitpro/libogc/include/**"
+    ],
+    "C_Cpp.default.defines": [
+        "PowerPC"
+    ],
+    "C_Cpp.default.compilerPath": "/opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+}

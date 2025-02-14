@@ -1,0 +1,13 @@
+AlignConsecutiveShortCaseStatements:
+  AcrossComments: true
+  AcrossEmptyLines: true
+  AlignCaseColons: false
+  Enabled: true
+AllowShortCaseLabelsOnASingleLine: true
+BasedOnStyle: Microsoft
+IndentCaseBlocks: true
+IndentCaseLabels: true
+IndentWidth: 4
+InsertBraces: true
+NamespaceIndentation: All
+SortIncludes: CaseSensitive
