@@ -19,7 +19,7 @@ jobs:
            wget https://apt.devkitpro.org/install-devkitpro-pacman
            chmod +x ./install-devkitpro-pacman
            sudo ./install-devkitpro-pacman
-           sudo devkitpro-pacman -Sy wii-dev
+           sudo dkp-pacman -Sy wii-dev
       - name: Build
         run: make
       - name: Package
