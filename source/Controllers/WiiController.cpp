@@ -106,7 +106,7 @@ bool WiiController::HasJoyStickCapability()
     return _data->exp.type == WPAD_EXP_NUNCHUK;
 }
 
-void WiiController::GetJoyStickValues(ubyte &x, ubyte &y)
+void WiiController::GetJoyStickValues(ubyte& x, ubyte& y)
 {
     if (HasJoyStickCapability())
     {

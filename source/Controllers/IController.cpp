@@ -24,6 +24,6 @@ bool IController::HasJoyStickCapability()
     return false;
 }
 
-void IController::GetJoyStickValues(ubyte &x, ubyte &y)
+void IController::GetJoyStickValues(ubyte& x, ubyte& y)
 {
 }

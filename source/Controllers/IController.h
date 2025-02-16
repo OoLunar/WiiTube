@@ -17,7 +17,7 @@ class IController
     virtual void Scan();
     virtual ControllerButton GetPressedButtons();
     virtual bool HasJoyStickCapability();
-    virtual void GetJoyStickValues(ubyte &x, ubyte &y);
+    virtual void GetJoyStickValues(ubyte& x, ubyte& y);
 };
 
 #endif

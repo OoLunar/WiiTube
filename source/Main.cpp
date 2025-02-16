@@ -7,11 +7,11 @@
 #include <string.h>
 #include <wiiuse/wpad.h>
 
-static void *xfb = NULL;
-static GXRModeObj *rmode = NULL;
+static void* xfb = NULL;
+static GXRModeObj* rmode = NULL;
 
 //---------------------------------------------------------------------------------
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
     // Initialise the video system
     VIDEO_Init();

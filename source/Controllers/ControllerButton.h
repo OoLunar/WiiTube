@@ -19,7 +19,7 @@ enum ControllerButton : int
     DPadRight = 1 << 10
 };
 
-void ControllerButtonToString(ControllerButton button, char *result, size_t resultSize)
+void ControllerButtonToString(ControllerButton button, char* result, size_t resultSize)
 {
     // Zero fill the result
     memset(result, 0, resultSize);
