@@ -1,5 +1,8 @@
 #pragma once
 
+#include <algorithm>
+#include <iostream>
+
 template <typename T> class List
 {
   private:
@@ -21,4 +24,6 @@ template <typename T> class List
     int Size() const;
     int Capacity() const;
     void Clear();
+
+    T* operator[](int index);
 };

@@ -1,6 +1,6 @@
 #include "List.h"
 
-template <typename T> List<T>::List(int capacity = 8)
+template <typename T> List<T>::List(int capacity)
 {
     _size = 0;
     _capacity = capacity;
@@ -81,4 +81,9 @@ template <typename T> int List<T>::Capacity() const
 template <typename T> void List<T>::Clear()
 {
     _size = 0;
+}
+
+template <typename T> T* List<T>::operator[](int index)
+{
+    return Get(index);
 }
