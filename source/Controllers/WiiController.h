@@ -1,20 +1,20 @@
 #ifndef WIICONTROLLER_H
 #define WIICONTROLLER_H
 
-#include "./IController.h"
+#include "Controller.h"
 #include <wiiuse/wpad.h>
 
-class WiiController : public IController
+class WiiController : public Controller
 {
   private:
     WPADData* _data;
 
   public:
     WiiController(int controllerId);
-    void Scan() override;
-    ControllerButton GetPressedButtons() override;
-    bool HasJoyStickCapability() override;
-    void GetJoyStickValues(ubyte& x, ubyte& y) override;
+    virtual void Scan();
+    virtual ControllerButton GetPressedButtons();
+    virtual bool HasJoyStickCapability();
+    virtual void GetJoyStickValues(ubyte& x, ubyte& y);
 };
 
 #endif

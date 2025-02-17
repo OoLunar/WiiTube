@@ -1,7 +1,7 @@
-#include "./WiiController.h"
+#include "WiiController.h"
 #include <gccore.h>
 
-WiiController::WiiController(int controllerId) : IController(controllerId), _data(nullptr)
+WiiController::WiiController(int controllerId) : Controller(controllerId), _data(nullptr)
 {
     WPAD_Init();
     WPAD_SetIdleTimeout(600);
