@@ -15,11 +15,18 @@ include $(DEVKITPPC)/wii_rules
 # SOURCES is a list of directories containing source code
 # INCLUDES is a list of directories containing extra header files
 #---------------------------------------------------------------------------------
+ifeq ($(OS),Windows_NT)
+    # Windows
+    SOURCES := $(shell dir $(SOURCE_DIR) /S /B /AD)
+else
+    # Unix-like systems (Linux, macOS, etc.)
+    SOURCES := $(shell find $(SOURCE_DIR) -type d)
+endif
+
 TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	build
-SOURCES		:=	source source/Controllers source/Types
 DATA		:=	data
-INCLUDES	:=  source source/Controllers source/Types
+INCLUDES	:=  $(SOURCES)
 
 #---------------------------------------------------------------------------------
 # options for code generation
