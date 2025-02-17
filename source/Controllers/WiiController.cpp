@@ -11,6 +11,11 @@ WiiController::WiiController(int controllerId) : Controller(controllerId), _data
     });
 }
 
+WiiController::~WiiController()
+{
+    WPAD_Disconnect(GetControllerId());
+}
+
 void WiiController::Scan()
 {
     WPAD_ScanPads();

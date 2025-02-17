@@ -1,12 +1,15 @@
-#ifndef CONTROLLER_MANAGER_H
-#define CONTROLLER_MANAGER_H
+#pragma once
 
 #include "Controller.h"
+#include "List.h"
 #include "WiiController.h"
 
 class ControllerManager
 {
   private:
+    // List of controller types
+    static Controller* _controllerTypes[8];
+
     WiiController* _wiiControllers[8];
 
   public:
@@ -17,9 +20,10 @@ class ControllerManager
     ControllerManager(const ControllerManager&) = delete;
     ControllerManager& operator=(const ControllerManager&) = delete;
 
-    void Init();
     Controller& GetPlayer(int index);
     int GetConnectedControllers() const;
-};
 
-#endif
+    static void Init();
+    static void Shutdown();
+    static void AddControllerType(Controller* controller);
+};

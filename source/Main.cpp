@@ -1,6 +1,7 @@
-#include "Controllers/Controller.h"
-#include "Controllers/ControllerManager.h"
-#include "Controllers/WiiController.h"
+#include "Controller.h"
+#include "ControllerButtonUtilities.h"
+#include "ControllerManager.h"
+#include "WiiController.h"
 #include <gcbool.h>
 #include <gccore.h>
 #include <stdio.h>
@@ -119,7 +120,7 @@ int main(int argc, char** argv)
         if (pressed != ControllerButton::None)
         {
             char button[128];
-            ControllerButtonToString(pressed, button, sizeof(button));
+            ControllerButtonUtilities::ToString(pressed, button, sizeof(button));
             printf("\x1b[2;0HButton: %s", button);
 
             ubyte x = 0, y = 0;
