@@ -8,7 +8,7 @@ class ControllerManager
 {
   private:
     // List of controller types
-    static Controller* _controllerTypes[8];
+    static List<Controller*> _controllerTypes;
 
     WiiController* _wiiControllers[8];
 
