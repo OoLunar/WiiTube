@@ -11,4 +11,10 @@
     ],
     "C_Cpp.default.compilerPath": "/opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "files.associations": {
+        "*.csproj": "xml",
+        "bitset": "cpp",
+        "string_view": "cpp",
+        "stacktrace": "cpp"
+    },
 }
